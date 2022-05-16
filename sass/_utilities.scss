@@ -12,3 +12,17 @@
     @content;
   }
 }
+
+// Set color
+@function set-color($theme) {
+  /// Set color of your text, backgrounds.
+  @return map-get($map: $colors, $key: $theme);
+}
+
+// strighly transparentize a color
+@function transparentize-color($theme, $amount) {
+  /// add strighly transparent to a color
+  $color: set-color($theme);
+
+  @return transparentize($color, $amount);
+}
