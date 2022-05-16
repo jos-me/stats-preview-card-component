@@ -13,4 +13,35 @@ img {
   display: block;
   width: 100%;
 }
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.stats .stat {
+  font-size: 1.2rem;
+}
+
+.stats .stat__counts {
+  font-weight: 700;
+}
+
+.stats .stat__title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+}
 /*# sourceMappingURL=app.css.map */

@@ -34,15 +34,3 @@ $font-weights: (
   regular: 400,
   bold: 700,
 );
-
-@function set-typeface($family) {
-  $typeface: map-get(
-    $map: $typefaces,
-    $key: $family,
-  );
-  @return $typeface;
-}
-
-@function set-font-weight() {
-  @return $weight;
-}

@@ -26,3 +26,24 @@
 
   @return transparentize($color, $amount);
 }
+
+// Set font family
+@function set-typeface($family) {
+  /// Set font family
+  $typeface: map-get(
+    $map: $typefaces,
+    $key: $family,
+  );
+  @return $typeface;
+}
+
+// Set font weight
+@function set-weight($value) {
+  /// Set font weight
+  $weight: map-get(
+    $map: $font-weights,
+    $key: $value,
+  );
+
+  @return $weight;
+}
