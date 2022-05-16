@@ -18,3 +18,31 @@ $colors: (
   accent: $color-soft-violet,
   neutral: $color-white,
 );
+
+// Typography
+$text-base-size: 15px;
+
+$typeface-inter: "Inter", sans-serif;
+$typeface-lexend-deca: "Lexend Deca", sans-serif;
+
+$typefaces: (
+  inter: $typeface-inter,
+  lexend-deca: $typeface-lexend-deca,
+);
+
+$font-weights: (
+  regular: 400,
+  bold: 700,
+);
+
+@function set-typeface($family) {
+  $typeface: map-get(
+    $map: $typefaces,
+    $key: $family,
+  );
+  @return $typeface;
+}
+
+@function set-font-weight() {
+  @return $weight;
+}
