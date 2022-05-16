@@ -24,6 +24,21 @@
   <body>
     <div class="container flex">
       <section class="card grid">
+        <article class="card__image">
+          <picture>
+            <source
+              srcset="images/image-header-mobile.jpg"
+              media="(max-width: 375px)"
+            />
+            <source
+              srcset="images/image-header-desktop.jpg"
+              media="(max-width: 1440px)"
+            />
+
+            <img src="images/image-header-desktop.jpg" alt="" />
+          </picture>
+        </article>
+
         <article class="card__block">
           <div class="card__text">
             <h3 class="card__title">
@@ -36,7 +51,7 @@
             </p>
           </div>
           <div class="stats">
-            <ul class="inline-list">
+            <ul class="inline-list flex">
               <li class="stat">
                 <p class="stat__counts">10k+</p>
                 <p class="stat__title">companies</p>
@@ -51,9 +66,6 @@
               </li>
             </ul>
           </div>
-        </article>
-        <article class="card__image">
-          <img src="" alt="" />
         </article>
       </section>
     </div>

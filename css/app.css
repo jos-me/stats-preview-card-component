@@ -12,6 +12,9 @@ ul {
 img {
   display: block;
   width: 100%;
+  image-rendering: optimizeSpeed;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 html {
