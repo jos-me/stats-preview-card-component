@@ -11,13 +11,18 @@ body {
   font-family: set-typeface(inter);
   font-weight: set-weight(regular);
   line-height: 1.5;
+  background-color: set-color(primary);
+  color: transparentize-color(neutral, 0.25);
 }
 
 .card {
+  background-color: set-color(secondary);
+
   &__title {
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: set-weight(bold);
+    color: set-color(neutral);
   }
 }
 
@@ -33,6 +38,11 @@ body {
       text-transform: uppercase;
       font-size: 0.8rem;
       font-family: set-typeface(lexend-deca);
+      color: transparentize-color(neutral, 0.4);
     }
   }
+}
+
+.highlighted {
+  color: set-color(accent);
 }

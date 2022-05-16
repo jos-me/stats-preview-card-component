@@ -23,12 +23,19 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  background-color: #090b1a;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card {
+  background-color: #1b1938;
 }
 
 .card__title {
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 700;
+  color: white;
 }
 
 .stats .stat {
@@ -43,5 +50,10 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.highlighted {
+  color: #aa5cdb;
 }
 /*# sourceMappingURL=app.css.map */
