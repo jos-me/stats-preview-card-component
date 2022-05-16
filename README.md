@@ -25,6 +25,10 @@ This is a solution to the [Stats preview card component](https://www.frontendmen
 
    - View the optimal layout depending on their device's screen size
 
+### Screenshot
+
+![screenshot of my solution](/screenshot.png)
+
 ### Links
 
 - Live site preview: [Stats preview card component](https://your-solution-url.com).
