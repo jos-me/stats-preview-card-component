@@ -87,8 +87,21 @@ body {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .card__title {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+  }
+}
+
 .card__paragraph {
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -99,8 +112,13 @@ body {
 }
 
 .stats .stat {
-  font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .stats .stat {
+    margin-bottom: 0;
+  }
 }
 
 .stats .stat__counts {
@@ -109,11 +127,23 @@ body {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .stats .stat__counts {
+    font-size: 2rem;
+  }
+}
+
 .stats .stat__title {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family: "Lexend Deca", sans-serif;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1440px) {
+  .stats .stat__title {
+    font-size: 1rem;
+  }
 }
 
 .highlighted {

@@ -59,10 +59,23 @@ body {
     font-weight: set-weight(bold);
     color: set-color(neutral);
     margin-bottom: 1rem;
+
+    @include media(desktop) {
+      & {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+      }
+    }
   }
 
   &__paragraph {
     font-size: 1.2rem;
+
+    @include media(desktop) {
+      & {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
 
@@ -73,13 +86,24 @@ body {
     }
   }
   .stat {
-    font-size: 1.2rem;
     margin-bottom: 1rem;
+
+    @include media(desktop) {
+      & {
+        margin-bottom: 0;
+      }
+    }
 
     &__counts {
       font-weight: set-weight(bold);
       color: set-color(neutral);
       font-size: 1.5rem;
+
+      @include media(desktop) {
+        & {
+          font-size: 2rem;
+        }
+      }
     }
 
     &__title {
@@ -87,6 +111,12 @@ body {
       font-size: 0.8rem;
       font-family: set-typeface(lexend-deca);
       color: transparentize-color(neutral, 0.4);
+
+      @include media(desktop) {
+        & {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
