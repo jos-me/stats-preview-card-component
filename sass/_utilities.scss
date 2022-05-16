@@ -1,14 +1,14 @@
 // FUNCTIONS AND MIXINS
 
 // media queries
-@mixin media($break) {
+@mixin media($device) {
   /// a media query for a given breakpoint.
-  $breakpoint: map-get(
+  $width: map-get(
     $map: $breakpoints,
-    $key: $break,
+    $key: $device,
   );
 
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $width) {
     @content;
   }
 }
