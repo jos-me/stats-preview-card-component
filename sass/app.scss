@@ -17,21 +17,69 @@ body {
 
 .card {
   background-color: set-color(secondary);
+  border-radius: 6px;
+  text-align: center;
+
+  @include media(desktop) {
+    & {
+      text-align: left;
+    }
+
+    &.grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__image {
+    margin-bottom: 1.5em;
+
+    @include media(desktop) {
+      & {
+        order: 1;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__block {
+    padding-inline: 5em;
+    display: flex;
+    flex-direction: column;
+
+    @include media(desktop) {
+      & {
+        justify-content: space-evenly;
+      }
+    }
+  }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     line-height: 1.2;
     font-weight: set-weight(bold);
     color: set-color(neutral);
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
   }
 }
 
 .stats {
+  @include media(desktop) {
+    &.grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   .stat {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 
     &__counts {
       font-weight: set-weight(bold);
+      color: set-color(neutral);
+      font-size: 1.5rem;
     }
 
     &__title {
@@ -45,4 +93,32 @@ body {
 
 .highlighted {
   color: set-color(accent);
+}
+
+.container {
+  $break: map-get(
+    $map: $breakpoints,
+    $key: mobile,
+  );
+  width: 90%;
+  min-width: $break;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    & {
+      width: 80%;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
