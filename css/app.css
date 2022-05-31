@@ -48,11 +48,11 @@ body {
 
 .card__image {
   margin-bottom: 1.5em;
-  background-color: #1b1938;
+  background-color: #aa5cdb;
   background-image: url(../images/image-header-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: color-dodge;
+  background-blend-mode: multiply;
 }
 
 @media screen and (min-width: 1440px) {
