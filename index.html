@@ -22,9 +22,9 @@
     <title>Stats Preview Card Component | Frontend Mentor</title>
   </head>
   <body>
-    <div class="container flex">
+    <main class="container flex">
       <section class="card grid">
-        <article class="card__image">
+        <div class="card__image">
           <picture>
             <source
               srcset="images/image-header-mobile.jpg"
@@ -37,14 +37,14 @@
 
             <img src="images/image-header-desktop.jpg" alt="" />
           </picture>
-        </article>
+        </div>
 
         <article class="card__block">
           <div class="card__text">
-            <h3 class="card__title">
+            <h1 class="card__title">
               Get <span class="highlighted">insights</span> that help your
               business grow.
-            </h3>
+            </h1>
             <p class="card__paragraph lead">
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
@@ -53,19 +53,19 @@
           <ul class="stats grid">
             <li class="stat">
               <p class="stat__counts">10k+</p>
-              <p class="stat__title">companies</p>
+              <h2 class="stat__title">companies</h2>
             </li>
             <li class="stat">
               <p class="stat__counts">314</p>
-              <p class="stat__title">templates</p>
+              <h2 class="stat__title">templates</h2>
             </li>
             <li class="stat">
               <p class="stat__counts">12M+</p>
-              <p class="stat__title">queries</p>
+              <h2 class="stat__title">queries</h2>
             </li>
           </ul>
         </article>
       </section>
-    </div>
+    </main>
   </body>
 </html>
