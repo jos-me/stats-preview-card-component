@@ -29,11 +29,13 @@ body {
   line-height: 1.5;
   background-color: #090b1a;
   color: rgba(255, 255, 255, 0.75);
+  padding: 8rem 0;
 }
 
 .card {
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: center;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1440px) {
@@ -47,12 +49,13 @@ body {
 }
 
 .card__image {
-  margin-bottom: 1.5em;
   background-color: #aa5cdb;
   background-image: url(../images/image-header-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
+  max-width: 768px;
+  height: 400px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -62,14 +65,13 @@ body {
         -ms-flex-order: 1;
             order: 1;
     margin-bottom: 0;
-    max-width: 768px;
     height: auto;
   }
 }
 
 .card__block {
   background-color: #1b1938;
-  padding: 5rem;
+  padding: 3rem 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,11 +83,13 @@ body {
 
 @media screen and (min-width: 1440px) {
   .card__block {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    gap: 5rem;
     padding: 8rem 5rem;
   }
+}
+
+.card__text {
+  margin-bottom: 3rem;
 }
 
 .card__title {
@@ -93,13 +97,13 @@ body {
   line-height: 1.2;
   font-weight: 700;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1440px) {
   .card__title {
     margin-bottom: 2rem;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -109,7 +113,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .card__paragraph {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -121,7 +125,7 @@ body {
 }
 
 .stats .stat {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1440px) {

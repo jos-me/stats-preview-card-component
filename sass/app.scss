@@ -13,11 +13,13 @@ body {
   line-height: 1.5;
   background-color: set-color(primary);
   color: transparentize-color(neutral, 0.25);
+  padding: 8rem 0;
 }
 
 .card {
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: center;
+  overflow: hidden;
 
   @include media(desktop) {
     & {
@@ -30,19 +32,19 @@ body {
   }
 
   &__image {
-    margin-bottom: 1.5em;
     background-color: set-color(accent);
     background-image: url(../images/image-header-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    max-width: 768px;
+    height: 400px;
 
     @include media(desktop) {
       & {
         background-image: url(../images/image-header-desktop.jpg);
         order: 1;
         margin-bottom: 0;
-        max-width: 768px;
         height: auto;
       }
     }
@@ -50,16 +52,20 @@ body {
 
   &__block {
     background-color: set-color(secondary);
-    padding: 5rem;
+    padding: 3rem 2.5rem;
     display: flex;
     flex-direction: column;
 
     @include media(desktop) {
       & {
-        justify-content: space-evenly;
+        gap: 5rem;
         padding: 8rem 5rem;
       }
     }
+  }
+
+  &__text {
+    margin-bottom: 3rem;
   }
 
   &__title {
@@ -67,12 +73,12 @@ body {
     line-height: 1.2;
     font-weight: set-weight(bold);
     color: set-color(neutral);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     @include media(desktop) {
       & {
         margin-bottom: 2rem;
-        font-size: 3.5rem;
+        font-size: 2.8rem;
       }
     }
   }
@@ -82,7 +88,7 @@ body {
 
     @include media(desktop) {
       & {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -95,7 +101,7 @@ body {
     }
   }
   .stat {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     @include media(desktop) {
       & {
