@@ -16,7 +16,6 @@ body {
 }
 
 .card {
-  background-color: set-color(secondary);
   border-radius: 6px;
   text-align: center;
 
@@ -32,23 +31,33 @@ body {
 
   &__image {
     margin-bottom: 1.5em;
+    background-color: set-color(secondary);
+    background-image: url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
 
     @include media(desktop) {
       & {
+        background-image: url(../images/image-header-desktop.jpg);
         order: 1;
         margin-bottom: 0;
+        max-width: 768px;
+        height: auto;
       }
     }
   }
 
   &__block {
-    padding-inline: 5em;
+    background-color: set-color(secondary);
+    padding: 5rem;
     display: flex;
     flex-direction: column;
 
     @include media(desktop) {
       & {
         justify-content: space-evenly;
+        padding: 8rem 5rem;
       }
     }
   }
@@ -130,7 +139,7 @@ body {
     $map: $breakpoints,
     $key: mobile,
   );
-  width: 90%;
+  width: 80%;
   min-width: $break;
   margin: 0 auto;
 
@@ -143,7 +152,7 @@ body {
 
 .flex {
   display: flex;
-  min-height: 100vh;
+  height: 960px;
   justify-content: center;
   align-items: center;
 }
